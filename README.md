@@ -18,13 +18,36 @@ Instalacion de requerimientos
 
 Migracion de base de datos pre configuradas
 
-Chequeamos que el proyecto haya 'prendido' correctamente
-
 Creamos la app students
 
-Registramos la app en config/settings/base.py
+Dentro de la carpeta students en el archivo models.py tenemos tres diferentes clases.
 
-Generamos la ruta students en urls raiz - config/urls.py
+La primer clase son los datos principales del alumno 
+La segunda clase son datos personales
+La tercera clase datos extra
+
+Todos los models se encuentran migrados a la base de datos
+La base de datos utilizada es la de posgres SQL Elephantp
+
+Tenemos la ruta principal denominada 'rutas' que nos lleva a la pagina principal del proyecto
+
+Alli en la barra de navegacion cuando hacemos click en  registro (navegacion entre templates) se nos abre otra pagina 
+(herencia de templates) con el formulario para que el alumno registre su nombre, apellido y direccion.
+
+Para chequear el ingreso de estos datos en la DB, dentro de Visual S Code descargue el paquete DataClient
+
+Retornando a la ruta principal "rutas" haciendo click en registro podemos acceder al formulario de busqueda , que ingresando el nombre, si este alumno existe en la base de datos me retorna el apellido y la direccion.
+
+
+NOTA 
+Existen elementos comentados en el archivo rutas/views.py para agregar posteriormente las clases o modelos restantes.
+
+
+
+
+
+
+
 
 
 
