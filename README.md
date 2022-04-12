@@ -2,8 +2,31 @@
 
 Sitio Guada Fitness
 
+
+
+
 [![Built with Cookiecutter Django](https://img.shields.io/badge/built%20with-Cookiecutter%20Django-ff69b4.svg?logo=cookiecutter)](https://github.com/cookiecutter/cookiecutter-django/)
 [![Black code style](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+Flujo de Proyecto
+
+Nombre del Proyecto: ProjectGuadaFit
+
+Descarga de Django Cookiecutter
+
+Instalacion de requerimientos
+
+Migracion de base de datos pre configuradas
+
+Chequeamos que el proyecto haya 'prendido' correctamente
+
+Creamos la app students
+
+Registramos la app en config/settings/base.py
+
+Generamos la ruta students en urls raiz - config/urls.py
+
+
 
 ## Settings
 

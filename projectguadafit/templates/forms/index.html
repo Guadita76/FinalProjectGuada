@@ -1,0 +1,38 @@
+{% extends 'rutas/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<html>
+
+
+<body>
+  <div class="container-fluid"> </div>
+  <div class="fh5co-banner-text-box">
+  <div class="quote-box pl-5 pr-5 wow bounceInRight">
+  <h2><span>REGISTRO ALUMNOS</span></h2>
+ 
+</div>
+      
+</div>
+
+</div>
+
+
+<form action='/rutas/formulario/' method='POST'>
+  
+{% csrf_token %}
+<table>{{forms}}</table>
+<input type= "submit" value = "ENVIAR">
+</form>
+
+
+</body>
+
+</html>
+
+{% endblock  %}
+
+
+      

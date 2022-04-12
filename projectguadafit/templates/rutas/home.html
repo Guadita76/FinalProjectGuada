@@ -1,0 +1,90 @@
+{% extends 'rutas/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container">
+  <div class="fh5co-banner-text-box">
+    <div class="quote-box pl-5 pr-5 wow bounceInRight">
+      <h2> BUILD YOUR <br><span> BEST BODY </span> </h2>
+    </div>
+    <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mr-3 mb-3 wow bounceInUp"> What's new</a> <a href="#" class="btn text-uppercase btn-outline-danger btn-lg mb-3 wow bounceInDown"> Courses</a> </div>
+</div>
+</div>
+<div id="about-us" class="container-fluid fh5co-about-us pl-0 pr-0 parallax-window" data-parallax="scroll" data-image-src="{% static 'images/about-us-bg.jpg' %}">
+<div class="container">
+  <div class="col-sm-6 offset-sm-6">
+    <h2 class="wow bounceInLeft" data-wow-delay=".25s">QUIENES SOMOS</h2>
+    <hr/>
+    <p class="wow bounceInRight" data-wow-delay=".25s">Trainers, athletes and serious clients alike are looking for the toughest, most brutally productive training techniques to spice up their workouts and provide a truly unique challenge for their body and mind. Think: one-arm push-ups, pistols, pull-ups, handstands, hanging levers and the like! If you want toeither for </p>
+    <a class="btn btn-lg btn-outline-danger d-inline-block text-center mx-auto wow bounceInDown">Learn More</a> </div>
+</div>
+</div>
+<div class="container-fluid fh5co-content-box">
+<div class="container">
+  <div class="row">
+    <div class="col-md-5 pr-0"><img src="{% static 'images/rode-gym.jpg' %}" alt="gym" class="img-fluid wow bounceInLeft" /> </div>
+    <div class="col-md-7 pl-0">
+      <div class="wow bounceInRight" data-wow-delay=".25s">
+        <div class="card-img-overlay">
+          <p>Great weekend, met lots of cool people and took away quite a bit. Thank you for the experience, and to you and your professional team for 
+            making things seem </p>
+        </div>
+        <img src="{% static 'images/gym-girls.jpg' %}" alt="girls in gym" class="img-fluid" /> </div>
+    </div>
+  </div>
+    <div class="row trainers pl-0 pr-0">
+    <div class="col-12 bg-50">
+      <div class="quote-box2 wow bounceInDown" data-wow-delay=".25s">
+        <h2> TRAINERS </h2>
+      </div>
+    </div>
+    <div class="col-md-6 pr-5 pl-5">
+      <div class="card text-center wow bounceInLeft" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src="{% static 'images/trainers1.jpg' %}" alt="Card image">
+        <div class="card-body mb-5">
+          <h4 class="card-title">GUADA</h4>
+          <p class="card-text">Trainers, athletes and serious clients alike are looking for the toughest, most brutally productive training techniques to spice up their workouts and provide a truly unique challenge</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 pl-5 pr-5">
+      <div class="card text-center wow bounceInRight" data-wow-delay=".25s"> <img class="card-img-top rounded-circle img-fluid" src="{% static 'images/trainers2.jpg' %}" alt="Card image">
+        <div class="card-body mb-5">
+          <h4 class="card-title">DIEGO</h4>
+          <p class="card-text">Trainers, athletes and serious clients alike are looking for the toughest, most brutally productive training techniques to spice up their workouts and provide a truly unique challenge</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row gallery">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body mb-4 wow bounceInLeft" data-wow-delay=".25s">
+          <h4 class="card-title">FILEX</h4>
+          <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+        </div>
+        <img class="card-img-top img-fluid wow bounceInRight" data-wow-delay=".25s" src="{% static 'images/g1.jpg' %}" alt="Card image"> </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card"> <img class="card-img-top img-fluid wow bounceInUp" data-wow-delay=".25s" src="{% static 'images/g2.jpg' %}" alt="Card image">
+        <div class="card-body mt-4 wow bounceInDown" data-wow-delay=".25s">
+          <h4 class="card-title">IGNITING</h4>
+          <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body mb-4 wow bounceInRight" data-wow-delay=".25s">
+          <h4 class="card-title">PASSION</h4>
+          <p class="card-text">I just wanted to sincerely thank you for the opportunity to represent Precision Nutrition and the US at such an amazing event. </p>
+        </div>
+        <img class="card-img-top img-fluid wow bounceInLeft" data-wow-delay=".25s" src="{% static 'images/g3.jpg' %}" alt="Card image"> </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  {% endblock  %}

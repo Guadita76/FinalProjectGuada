@@ -7,6 +7,8 @@ from django.views.generic import TemplateView
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 from rest_framework.authtoken.views import obtain_auth_token
 
+from projectguadafit.students.views import StudentView
+
 urlpatterns = [
     path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
     path(
@@ -17,12 +19,15 @@ urlpatterns = [
     # User management
     path("users/", include("projectguadafit.users.urls", namespace="users")),
     path("accounts/", include("allauth.urls")),
+    path("students/",StudentView.as_view(template_name= "students/index.html"), name= "students"),
+    path ("rutas/", include ("projectguadafit.rutas.urls", namespace="rutas")),
     # Your stuff: custom urls includes go here
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 # API URLS
 urlpatterns += [
     # API base url
+    
     path("api/", include("config.api_router")),
     # DRF auth token
     path("auth-token/", obtain_auth_token),

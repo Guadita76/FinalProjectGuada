@@ -1,0 +1,47 @@
+
+
+
+  {% extends 'rutas/base.html' %}
+
+  {% load static %}
+  
+  {% block content %}
+  
+  <html>
+ 
+  
+  <body>
+    <div class="container-fluid"> </div>
+    <div class="fh5co-banner-text-box">
+    <div class="quote-box pl-5 pr-5 wow bounceInRight">
+    <h2><span>BUSQUEDA ALUMNOS</span></h2>
+   
+  </div>
+        
+  </div>
+  
+  </div>
+  <form action= '/rutas/search/' method= 'POST'>
+
+    {% csrf_token %}
+
+      <input type= 'text' name= 'name'>
+      <input type= 'submit' value= 'BUSCAR'>
+
+   <table>
+   
+    <h1> RESULTADOS</h1>
+  
+
+    {% for element in elements %}
+    <p> {{element.name}} </p>
+    <p> {{element.last_name}} </p>
+    <p> {{element.address}} </p>
+
+    {% endfor %}
+  </table>
+  </form>
+</body>
+
+</html>
+{% endblock %}
